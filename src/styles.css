@@ -1,63 +1,113 @@
 /* styles.css */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  width: 84%;
-  max-width: 500px;
-  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
+  color: #4a004f;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 label {
   display: flex;
   flex-direction: column;
-  font-weight: bold;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 input, select {
-  padding: 8px;
-  font-size: 16px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  background-color: #fafafa;
+  color: #333;
 }
 
 button {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #007bff;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #6a0dad; /* Purple background */
   color: #fff;
-  border: none;
+  border: 2px solid #5a0a9e; /* Darker purple border */
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #5a0a9e; /* Darker purple on hover */
+  border-color: #4a0070; /* Even darker purple */
 }
 
 .result {
   margin-top: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ddd;
+  background-color: #fafafa;
+  color: #333;
 }
 
 .toggle-btn {
   margin-bottom: 20px;
-  padding: 10px;
-  background-color: #28a745;
+  padding: 12px;
+  background-color: #9b59b6; /* Light purple */
   color: #fff;
-  border: none;
+  border: 2px solid #8e44ad; /* Darker purple border */
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .toggle-btn:hover {
-  background-color: #218838;
+  background-color: #8e44ad; /* Darker purple on hover */
+  border-color: #7d3c8b; /* Even darker purple */
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-button {
+  padding: 12px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #eaeaea;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex: 1;
+  text-align: center;
+}
+
+.tab-button.active {
+  background-color: #6a0dad; /* Purple background */
+  color: #fff;
+  border-color: #5a0a9e; /* Darker purple border */
 }
