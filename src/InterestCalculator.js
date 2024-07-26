@@ -57,6 +57,7 @@ const InterestCalculator = () => {
     };
 
   return (
+    <div>
     <div className="container">
       <button className="toggle-btn" onClick={toggleLanguage}>
         {language === 'en' ? '中文' : 'English'}
@@ -94,7 +95,7 @@ const InterestCalculator = () => {
           {/* <span> (Today)</span> */}
         </label>
 
- <label>
+        <label>
           <span>{t.term}:</span>
           <div className='termInput'>
             <input
@@ -140,6 +141,12 @@ const InterestCalculator = () => {
         </div>
       )}
     </div>
+
+    <div class="footer">
+    <p>Copyright by Hoi Ian Wong</p>
+    </div>
+</div>
+    
   );
 };
 
