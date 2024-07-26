@@ -90,7 +90,7 @@ const InterestCalculator = () => {
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
           />
-          <span> (today)</span>
+          {/* <span> (Today)</span> */}
         </label>
         <label>
           <span>{t.term}:</span>
@@ -111,7 +111,7 @@ const InterestCalculator = () => {
             <option value="years">Years</option>
           </select>
         </label>
-        <button type="submit">{t.calculate}</button>
+        <button type="submit">{t.submit}</button>
       </form>
       {endDate && (
         <div className="result">

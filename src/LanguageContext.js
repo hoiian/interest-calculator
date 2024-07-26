@@ -13,10 +13,11 @@ const translations = {
         result: 'Your calculated end date and interest amount',
         errorMessage: 'Please fill out all fields correctly',
         interest: 'Interest Amount',
+        submit: "Submit",
       },
       zh: {
-        calculate: '計算',
-        principal: '本金金额',
+        calculate: '(GPT指使)黃凱欣的定存計算器',
+        principal: '本金',
         rate: '年利率 (%)',
         startDate: '起息日',
         term: '存款期',
@@ -24,6 +25,7 @@ const translations = {
         result: '結果',
         errorMessage: '請填寫正確',
         interest: '利息',
+        submit: "計算"
       },
 };
 
