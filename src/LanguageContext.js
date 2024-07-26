@@ -14,6 +14,9 @@ const translations = {
         errorMessage: 'Please fill out all fields correctly',
         interest: 'Interest Amount',
         submit: "Submit",
+        days: "Days",
+        months: "Months",
+        years: "Years"
       },
       zh: {
         calculate: '黃凱欣的定存計算器',
@@ -25,7 +28,10 @@ const translations = {
         result: '結果',
         errorMessage: '請填寫正確',
         interest: '利息',
-        submit: "計算"
+        submit: "計算",
+        days: "日",
+        months: "月",
+        years: "年"
       },
 };
 

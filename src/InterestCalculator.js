@@ -61,7 +61,7 @@ const InterestCalculator = () => {
       <button className="toggle-btn" onClick={toggleLanguage}>
         {language === 'en' ? '中文' : 'English'}
       </button>
-      <h1>{t.calculate}</h1>
+      {/* <h1>{t.calculate}</h1> */}
       <form onSubmit={handleSubmit}>
         <label>
           <span>{t.principal}:</span>
@@ -96,35 +96,37 @@ const InterestCalculator = () => {
 
  <label>
           <span>{t.term}:</span>
-          <input
-            type="number"
-            name="term"
-            value={term}
-            onChange={(e) => setTerm(e.target.value)}
-            required
-          />
-          <div className="tab-buttons">
-            <button
-              type="button"
-              className={`tab-button ${termUnit === 'days' ? 'active' : ''}`}
-              onClick={() => handleTermUnitChange('days')}
-            >
-              Days
-            </button>
-            <button
-              type="button"
-              className={`tab-button ${termUnit === 'months' ? 'active' : ''}`}
-              onClick={() => handleTermUnitChange('months')}
-            >
-              Months
-            </button>
-            <button
-              type="button"
-              className={`tab-button ${termUnit === 'years' ? 'active' : ''}`}
-              onClick={() => handleTermUnitChange('years')}
-            >
-              Years
-            </button>
+          <div className='termInput'>
+            <input
+                type="number"
+                name="term"
+                value={term}
+                onChange={(e) => setTerm(e.target.value)}
+                required
+            />
+            <div className="tab-buttons">
+                <button
+                type="button"
+                className={`tab-button ${termUnit === 'days' ? 'active' : ''}`}
+                onClick={() => handleTermUnitChange('days')}
+                >
+                {t.days}
+                </button>
+                <button
+                type="button"
+                className={`tab-button ${termUnit === 'months' ? 'active' : ''}`}
+                onClick={() => handleTermUnitChange('months')}
+                >
+                {t.months}
+                </button>
+                <button
+                type="button"
+                className={`tab-button ${termUnit === 'years' ? 'active' : ''}`}
+                onClick={() => handleTermUnitChange('years')}
+                >
+                {t.years}
+                </button>
+            </div>
           </div>
         </label>
 
