@@ -58,7 +58,7 @@ const InterestCalculator = () => {
   return (
     <div className="container">
       <button className="toggle-btn" onClick={toggleLanguage}>
-        {language === 'en' ? 'Switch to Chinese' : '切换到英文'}
+        {language === 'en' ? '中文' : 'English'}
       </button>
       <h1>{t.calculate}</h1>
       <form onSubmit={handleSubmit}>
