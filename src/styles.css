@@ -1,5 +1,11 @@
-/* styles.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: grid;
+  place-items: center; /* 水平和垂直居中 */
   background-color: #E8EBF8;
   color: #333;
   margin: 0;
@@ -7,8 +13,9 @@ body {
 }
 
 .container {
-  width: 80%;
-  max-width: 400px;
+  min-width: 350px;
+  max-width: 500px;
+  box-sizing: border-box; 
   margin: 20px auto;
   padding: 40px;
   border-radius: 24px;
@@ -67,9 +74,9 @@ button[type=submit]:hover {
 .result {
   margin-top: 20px;
   padding: 20px;
-  border: 2px solid #ddd;
-  background-color: #fafafa;
+  background-color: #eff1ff;
   color: #333;
+  border-radius: 12px;
 }
 
 .toggle-btn {
@@ -106,7 +113,7 @@ button[type=submit]:hover {
   padding: 5px 12px;
   font-size: 0.8rem;
   border: none;
-  color: inherit;
+  color: #00000045;
   background: none;
 }
 

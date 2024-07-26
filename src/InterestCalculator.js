@@ -134,7 +134,7 @@ const InterestCalculator = () => {
       </form>
       {endDate && (
         <div className="result">
-          <h2>{t.result}</h2>
+          {/* <h2>{t.result}</h2> */}
           <p>{t.endDate}: {endDate}</p>
           <p>{t.interest}: ${interest}</p> {/* Show interest amount */}
         </div>
