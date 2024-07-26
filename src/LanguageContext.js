@@ -4,19 +4,19 @@ const LanguageContext = createContext();
 
 const translations = {
     en: {
-        calculate: 'Interest Calculator',
+        calculate: 'HoiIan\'s Interest Calculator',
         principal: 'Principal Amount',
         rate: 'Annual Interest Rate (%)',
         startDate: 'Start Date',
         term: 'Term',
         endDate: 'End Date',
-        result: 'Your calculated end date and interest amount',
+        result: 'Result',
         errorMessage: 'Please fill out all fields correctly',
         interest: 'Interest Amount',
         submit: "Submit",
       },
       zh: {
-        calculate: '(GPT指使)黃凱欣的定存計算器',
+        calculate: '黃凱欣的定存計算器',
         principal: '本金',
         rate: '年利率 (%)',
         startDate: '起息日',
