@@ -32,6 +32,23 @@ h1 {
   padding-bottom: 10px;
 }
 
+/* language toggle */
+.toggle-btn {
+  margin-bottom: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.toggle-btn:hover {
+}
+
+.termInput{
+  position: relative;
+  display: flex;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -55,49 +72,17 @@ input, select {
   color: #333;
 }
 
-button[type=submit] {
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 24px;
-  background: linear-gradient(90deg, #6C63FF 0%, #7A56FF 100%);
-  color: #fff;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+/* Rate slider */
 
-button[type=submit]:hover {
-  background-color: #5a0a9e; /* Darker purple on hover */
-  border-color: #4a0070; /* Even darker purple */
-}
 
-.result {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #eff1ff;
-  color: #333;
-  border-radius: 12px;
-}
 
-.toggle-btn {
-  margin-bottom: 20px;
-  padding: 4px 12px;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
-.toggle-btn:hover {
-}
-
-.termInput{
-  position: relative;
-  display: flex;
-}
+/*term time unit selection */
 
 .termInput input{
   flex:auto;
 }
+
 
 .tab-buttons {
   position:absolute;
@@ -124,6 +109,30 @@ button[type=submit]:hover {
 .tab-button.active {
   font-weight: bold;
   color:#6C63FF;
+}
+
+button[type=submit] {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 24px;
+  background: linear-gradient(90deg, #6C63FF 0%, #7A56FF 100%);
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button[type=submit]:hover {
+  background-color: #5a0a9e; /* Darker purple on hover */
+  border-color: #4a0070; /* Even darker purple */
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #eff1ff;
+  color: #333;
+  border-radius: 12px;
 }
 
 .footer {

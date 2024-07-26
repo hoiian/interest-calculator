@@ -8,7 +8,7 @@ const InterestCalculator = () => {
   
     // State variables
     const [principal, setPrincipal] = useState('');
-    const [rate, setRate] = useState('');
+    const [rate, setRate] = useState('2.5');
     const [startDate, setStartDate] = useState(new Date().toISOString().split('T')[0]); // Default to today
     const [term, setTerm] = useState('');
     const [termUnit, setTermUnit] = useState('days');
@@ -74,7 +74,7 @@ const InterestCalculator = () => {
             required
           />
         </label>
-        <label>
+        {/* <label>
           <span>{t.rate}:</span>
           <input
             type="number"
@@ -83,7 +83,20 @@ const InterestCalculator = () => {
             onChange={(e) => setRate(e.target.value)}
             required
           />
-        </label>
+        </label> */}
+
+        <label>
+  Annual Interest Rate: {rate}%
+  <input
+    type="range"
+    min="0.1"
+    max="5"
+    step="0.05"
+    value={rate}
+    onChange={(e) => setRate(e.target.value)}
+  />
+</label>
+        
         <label>
           <span>{t.startDate}:</span>
           <input
